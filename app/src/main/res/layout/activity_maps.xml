@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wall2">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1100px"
+        android:gravity="center">
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.artur.nazaliczenie.MapsActivity" />
+
+    </LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="1110px">
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Rozpocznij trening"
+    android:id="@+id/button1"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginTop="1310px"
+android:layout_marginLeft="30px">
+<TextView
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:text="Czas treningu:"
+    android:textSize="75px"
+    android:textColor="#FFFF"
+    android:id="@+id/textView"
+    android:layout_below="@+id/button"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginTop="1310px"
+android:layout_marginLeft="530px">
+<TextView
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFF"
+    android:text="0:00"
+    android:textSize="75px"
+    android:id="@+id/timerTextView"
+    android:layout_below="@+id/button"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginTop="1510px"
+android:layout_marginLeft="30px">
+<TextView
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:text="Przebyty dystans (m):"
+    android:textSize="75px"
+    android:textColor="#FFFF"
+    android:id="@+id/textView3"
+    android:layout_below="@+id/button"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginTop="1510px"
+android:layout_marginLeft="780px">
+<TextView
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFF"
+    android:text="0"
+    android:textSize="75px"
+    android:id="@+id/kmTextView"
+    android:layout_below="@+id/button"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"/>
+
+</LinearLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall2"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:layout_height="100px"
+        android:layout_width="70dp"
+        android:id="@+id/t_id"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"
+        android:text="ID"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_height="100px"
+        android:layout_width="150dp"
+        android:id="@+id/t_date"
+        android:layout_toRightOf="@+id/t_id"
+        android:text="Data"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_height="100px"
+        android:layout_width="150dp"
+        android:id="@+id/t_time"
+        android:layout_toRightOf="@+id/t_date"
+        android:textColor="#ffff"
+        android:text="Godzina"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <ListView
+        android:layout_marginTop="130px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewFromDB"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/powrot"
+        android:src="@drawable/back"
+        android:onClick="back"
+        android:layout_alignBottom="@+id/listViewFromDB"/>
+
+</RelativeLayout>
